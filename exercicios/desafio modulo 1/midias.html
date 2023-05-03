@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em Html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir esse Site em vários dispositivos diferente ou simplismente aumente e diminua o tamanho do seu navegador. 
+        <h4>media="(max-width:1000px )" srcset="fotom.png" significa que se o navegador for menor que 1000 px ele deve abrir o arquivo dentro de srcset (o maximo é mil)</h4>
+        <p> width é Largura </p>
+        <p> Sempre é do na ordem abaixo do menor para maior....eu falo a ordem dos sources..kkk </p>
+    </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="fotop.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="fotom.png" type="image/png">
+        <img src="fotog.png" alt="imagem flexivel">
+    </picture>
+<h1>Reproduzindo audio</h1>
+<audio src="audio.mp3" controls autoplay loop></audio>
+<h2>outra forma de reproduzir audio</h2>
+<p>loop repete a musica <br>
+preload metadata - carrega somente algumas partes . é ideal , <br> 
+none não carrega nada . e auto carrega tudo. 
+
+</p>
+<audio preload="metadata" autoplay controls >
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.wav" type="audio/wav">
+    <source src="audio.ogg" type="audio/ogg">
+    <p>infelizmente seu não navegador não conseguiu <a href="audio.mp3">clique aqui para baixar</a></p>
+    <p>mpeg é MP3</p>
+</audio>
+    
+</body>
+</html>

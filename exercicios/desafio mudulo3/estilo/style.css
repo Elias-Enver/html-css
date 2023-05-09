@@ -11,6 +11,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    background-position: center;
 }
 html,body{
     font-family: var(--fonte1);
@@ -47,6 +48,7 @@ section{
     line-height:2em ;
     padding-left: 30px;
     font-size: 3.5vw;
+    display: inline-block;
 }
 section>p{
     padding-bottom: 2em;
@@ -73,7 +75,7 @@ section.imagem > p{
 }
 section#img01{
     background-image: url("../imagens/background001.jpg");
-    background-position: right center;
+    background-position: left center center;
     background-size: cover;
     background-attachment: fixed;
 

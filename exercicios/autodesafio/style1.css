@@ -18,21 +18,25 @@
     max-width:;
     
 }
-body{
-    
+body,html{
+    min-height: 100vh;
 }
 header{
-    width: 100vw;
+   
     background-color: var(--cor01);
     text-align: center;
-    padding: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
     position: fixed;
+    display: block;
 }
 header>h1{
     font-family: var(--fonte2);
-    font-size: 3em;
-    color: var(--cor05);
+    padding-top: 50px;
+    font-variant: capitalize;
+    font-size: 7vw;
+    
+}
     
     
 }
@@ -61,8 +65,10 @@ section.foto>p{
     color: white;
     
 }
-section.imagem>p{
-    color:;
+section.primeira{
+    color:white;
+    margin-left: 200px;
+    display: block;
 }
 section>p{
     max-width: ;

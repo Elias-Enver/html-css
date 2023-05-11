@@ -16,26 +16,36 @@
     margin: 0px;
     padding: 0px;
     max-width:;
-    display: auto;
-    ;
-
+    
+}
+body{
+    
 }
 header{
+    width: 100vw;
     background-color: var(--cor01);
     text-align: center;
     padding: 30px;
     margin-bottom: 10px;
-    
+    position: fixed;
 }
 header>h1{
     font-family: var(--fonte2);
     font-size: 3em;
     color: var(--cor05);
+    
+    
 }
 
 section{
     padding-left: 10vh;
     margin-bottom: 10px;
+    display: block;
+    overflow: visible;
+    visibility: visible;
+    
+
+    
 
 }
 section.foto{
@@ -72,6 +82,7 @@ section#foto1{
     background-image: url(foto01.jpg);
     background-position: right bottom;
     text-align: left;
+    ;
     vertical-align: top;
 }
 section#foto1 >p{
